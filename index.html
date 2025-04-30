@@ -2,115 +2,95 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Love Meter</title>
-  <style>
-    body {
-      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
-      font-family: 'Poppins', sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      margin: 0;
-    }
-    h1 {
-      color: #fff;
-      margin-bottom: 20px;
-    }
-    .container {
-      background: #fff;
-      padding: 30px;
-      border-radius: 20px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-      text-align: center;
-    }
-    input {
-      width: 80%;
-      padding: 10px;
-      margin: 10px 0;
-      border: none;
-      border-radius: 10px;
-      background: #f0f0f0;
-      font-size: 16px;
-    }
-    button {
-      background: #ff6b81;
-      color: white;
-      border: none;
-      padding: 12px 25px;
-      margin-top: 10px;
-      font-size: 16px;
-      border-radius: 30px;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-    button:hover {
-      background: #ff4757;
-    }
-    .result {
-      margin-top: 20px;
-      font-size: 22px;
-      font-weight: bold;
-      color: #ff4757;
-      display: none;
-      animation: fadeIn 1s forwards;
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-    .heart {
-      font-size: 40px;
-      color: #ff6b81;
-      animation: heartbeat 1s infinite;
-      margin-top: 15px;
-    }
-    @keyframes heartbeat {
-      0%, 100% { transform: scale(1); }
-      50% { transform: scale(1.2); }
-    }
-  </style>
+  <title>3D Realistic Bee | @coding.stella</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://public.codepenassets.com/css/normalize-5.0.0.min.css">
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 
-<h1>Love Meter</h1>
-<div class="container">
-  <input type="text" id="name1" placeholder="Enter Your Name">
-  <input type="text" id="name2" placeholder="Enter Crush's Name">
-  <button onclick="calculateLove()">Check Love %</button>
-  <div class="result" id="result"></div>
-  <div class="heart">❤️</div>
+<header>
+  <div class="content-fit">
+    <div class="logo">@codingstella</div>
+    <nav>
+      <ul>
+        <li>Contacts</li>
+        <li>Category</li>
+        <li>Login</li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="section" id="banner">
+  <div class="content-fit">
+    <div class="title" data-before="3D ANIMATION">3D ANIMATION</div>
+  </div>
+  <img src="/Images/flower.png" class="decorate" alt="" style="width: 50vw; bottom: 0; right: 0;">
+  <img src="/Images/leaf.png" class="decorate" alt="" style="width: 30vw; bottom: 0; left: 0;">
 </div>
 
-<script>
-  function calculateLove() {
-    const name1 = document.getElementById('name1').value.trim();
-    const name2 = document.getElementById('name2').value.trim();
-    const result = document.getElementById('result');
+<div class="section" id="intro">
+  <div class="content-fit">
+    <div class="number">01</div>
+    <div class="des">
+      <div class="title">3D Animation Design for Website</div>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus voluptas a porro libero
+      recusandae quae, aut ratione, incidunt laborum, necessitatibus similique enim doloremque ex.
+      Laudantium obcaecati aspernatur doloremque illo beatae, maxime hic itaque consequatur nisi
+      accusantium veritatis, voluptatem ratione! Placeat numquam nisi reiciendis harum quibusdam tempore
+      eaque deleniti accusantium, veniam quae eos sed, asperiores laborum corporis odit mollitia.</p>
+    </div>
+  </div>
+</div>
 
-    if(name1 === "" || name2 === "") {
-      result.style.display = 'block';
-      result.innerHTML = "Please enter both names!";
-      return;
-    }
+<div class="section" id="description">
+  <div class="content-fit">
+    <div class="number">02</div>
+    <div class="des">
+      <div class="title">Honeybee</div>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus voluptas a porro libero
+      recusandae quae, aut ratione, incidunt laborum, necessitatibus similique enim doloremque ex.
+      Laudantium obcaecati aspernatur doloremque illo beatae, maxime hic itaque consequatur nisi
+      accusantium veritatis, voluptatem ratione! Placeat numquam nisi reiciendis harum quibusdam tempore
+      eaque deleniti accusantium, veniam quae eos sed, asperiores laborum corporis odit mollitia.</p>
+    </div>
+  </div>
+  <img src="/Images/leaf1.png" class="decorate" alt="" style="width: 70vw; bottom: 0; right: 0;">
+</div>
 
-    // Random love percentage between 50% to 100%
-    const lovePercent = Math.floor(Math.random() * 50) + 50;
-    let message = "";
+<div class="section" id="contact">
+  <div class="content-fit">
+    <div class="number">03</div>
+    <div class="des">
+      <div class="title">CONTACT</div>
+      <table>
+        <tr>
+          <td>Email</td>
+          <td>contact@beeworks3d.com</td>
+        </tr>
+        <tr>
+          <td>Phone</td>
+          <td>+1 123 456 789</td>
+        </tr>
+        <tr>
+          <td>Website</td>
+          <td>beeworks3d.com</td>
+        </tr>
+        <tr>
+          <td>Youtube</td>
+          <td>@beeworks</td>
+        </tr>
+      </table>
+      <div class="sign">BeeWorks</div>
+    </div>
+  </div>
+</div>
 
-    if (lovePercent > 90) {
-      message = "Perfect Match! Made for each other!";
-    } else if (lovePercent > 75) {
-      message = "Strong Connection! Lovely Pair!";
-    } else {
-      message = "Good Bond! Keep Growing!";
-    }
+<div id="container3D"></div>
 
-    result.style.display = 'block';
-    result.innerHTML = `${name1} ❤️ ${name2}<br><br>Love Score: ${lovePercent}%<br>${message}`;
-  }
-</script>
+<!-- Scripts -->
+<script type="module" src="./script.js"></script>
 
 </body>
 </html>
